@@ -1,0 +1,32 @@
+{
+  "name": "vue2.0-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --inline --hot --port 9090"
+  },
+  "author": "tj",
+  "license": "ISC",
+  "dependencies": {
+    "element-ui": "^0.2.6",
+    "vue": "^2.0.0-rc.4",
+    "vue-resource": "^1.0.3",
+    "vue-router": "^2.0.0-rc.4",
+    "vuex": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-plugin-syntax-jsx": "^6.13.0",
+    "babel-plugin-transform-vue-jsx": "^3.1.0",
+    "babel-preset-es2015": "^6.13.2",
+    "cross-env": "^1.0.6",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.4",
+    "vue-loader": "^9.2.2",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
