@@ -1,10 +1,8 @@
 import Vue from 'vue';
-import Vuex from 'vuex';
 import VueResource from 'vue-resource'
 
 Vue
-.use(VueResource)
-.use(Vuex);
+.use(VueResource);
 
 var ListResource = Vue.resource('http://ac-onsg2j7w.clouddn.com/33e911a97630d768.json')
 var getList = ({commit}) => {
@@ -45,11 +43,9 @@ var getters = {
     items: state => state.items
 }
 
-const store = new Vuex.Store({
+export default {
     state,
     getters,
     mutations,
     actions
-});
-
-export default store;
+};

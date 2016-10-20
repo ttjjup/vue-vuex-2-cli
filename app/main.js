@@ -5,27 +5,18 @@ import VueResource from 'vue-resource';
 import Element from 'element-ui';
 
 import App from './app';
-import Home from './components/home';
-import List from './components/list';
 
-import store from './store';
+// vuex
+import store from './vuex/store';
+
+// router
+import routers from './routers';
 
 Vue
 .use(VueRouter)
 .use(Element);
 
-const router = new VueRouter({
-    mode: 'history',
-    routes:[{
-        path: '/home',
-        component: Home
-    },
-    {
-        path: '/list',
-        component: List
-    },
-    {path: '*', redirect: '/home'}]
-});
+const router = new VueRouter(routers);
 
 
 new Vue({
